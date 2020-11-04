@@ -61,19 +61,19 @@ Pod::Spec.new do |s|
 
   s.subspec 'SuperAwesome' do |b|
     b.source_files = 'CASMediation/CASSuperAwesomeProvider.swift'
-    b.dependency 'CleverAdsSolutions-SDK/General', "#{s.version}"
+    b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
     b.dependency 'SuperAwesome', '~> 7.2.16'
   end
 
   s.subspec 'MyTarget' do |b|
     b.source_files = 'CASMediation/CASMyTargetProvider.swift'
-    b.dependency 'CleverAdsSolutions-SDK/General', "#{s.version}"
+    b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
     b.dependency 'myTargetSDK', '~> 5.9.4'
   end
 
   s.subspec 'MobFox' do |b|
     b.source_files = 'CASMediation/CASMobFoxProvider.swift'
-    b.dependency 'CleverAdsSolutions-SDK/General', "#{s.version}"
+    b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
     b.dependency 'MFXSDK_Native','~> 4.2.2'
   end
 
@@ -82,7 +82,7 @@ Pod::Spec.new do |s|
                      'CASMediation/Amazon/CASAmazonBridge.h'
     b.private_header_files = 'CASMediation/Amazon/CASAmazonBridge.h'
     b.preserve_paths = 'CASMediation/Amazon/module.modulemap'
-    b.dependency 'CleverAdsSolutions-SDK/General', "#{s.version}"
+    b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
     b.dependency 'AmazonAd', '~> 3.1.0'
   end
 
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
                      'CASMediation/Chartboost/CASChartboostBridge.h'
     b.private_header_files = 'CASMediation/Chartboost/CASChartboostBridge.h'
     b.preserve_paths = 'CASMediation/Chartboost/module.modulemap'
-    b.dependency 'CleverAdsSolutions-SDK/General', "#{s.version}"
+    b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
     b.dependency 'ChartboostSDK', '8.3.1'
   end
 
@@ -100,11 +100,12 @@ Pod::Spec.new do |s|
                      'CASMediation/StartApp/CASStartAppBridge.h'
     b.private_header_files = 'CASMediation/StartApp/CASStartAppBridge.h'
     b.preserve_paths = 'CASMediation/StartApp/module.modulemap'
-    b.dependency 'CleverAdsSolutions-SDK/General', "#{s.version}"
+    b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
     b.dependency 'StartAppSDK', '4.5.0'
   end
 
   s.subspec 'Full' do |b|
+    b.dependency 'CleverAdsSolutions-SDK/General', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/SuperAwesome', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/Chartboost', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/StartApp', "#{s.version}"

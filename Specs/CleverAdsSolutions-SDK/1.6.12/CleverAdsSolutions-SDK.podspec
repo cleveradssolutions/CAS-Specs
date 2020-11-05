@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "CleverAdsSolutions-SDK"
-  s.version             = "1.7.0-alpha1"
+  s.version             = "1.6.12"
   s.summary             = "Clever Ads Solutions iOS framework"
   s.homepage            = "https://cleveradssolutions.com"
   s.license             = { :type => "Commercial", :file => "LICENSE.md" }

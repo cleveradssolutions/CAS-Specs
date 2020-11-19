@@ -48,7 +48,7 @@ Pod::Spec.new do |s|
     b.dependency 'AppLovinSDK', '~> 6.14.8'
     b.dependency 'FBAudienceNetwork', '6.2.0'
     b.dependency 'InMobiSDK/Core', '9.1.0'
-    b.dependency 'YandexMobileAds', '3.1.0'
+    b.dependency 'YandexMobileAds', '3.1.1'
     b.dependency 'UnityAds', '~> 3.5.1'
   end
 

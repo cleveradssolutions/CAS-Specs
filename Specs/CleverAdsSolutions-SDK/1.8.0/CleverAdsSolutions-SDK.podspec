@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
     b.dependency 'Google-Mobile-Ads-SDK', '7.67.0'
     b.dependency 'VungleSDK-iOS', '~> 6.8.1'
-    b.dependency 'IronSourceSDK', '~> 7.0.3.0'
+    b.dependency 'IronSourceSDK', '~> 7.0.4.0'
     b.dependency 'AdColony', '~> 4.4.1.1'
     b.dependency 'AppLovinSDK', '~> 6.14.9'
     b.dependency 'InMobiSDK/Core', '~> 9.1.1'

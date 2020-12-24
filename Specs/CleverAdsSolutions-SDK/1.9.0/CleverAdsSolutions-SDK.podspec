@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 arm64e armv7 armv7s', 'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'i386 x86_64'}
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 arm64e armv7 armv7s', 'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'i386 x86_64'}
   s.default_subspec  = 'Main'
-  s.cocoapods_version = '>= 1.9.0'
+  s.cocoapods_version = '>= 1.10.0'
 
   s.subspec 'Base' do |b|
     b.vendored_frameworks = 'CASBase/CleverAdsSolutions.xcframework'

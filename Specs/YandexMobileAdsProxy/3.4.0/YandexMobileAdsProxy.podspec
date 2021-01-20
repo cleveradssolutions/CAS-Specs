@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source                = { :http => "https://bintray.com/cleveradssolutions/CAS-Proxy/download_file?file_path=YandexAdsProxy.tar.gz"  }
   s.platform              = :ios
   s.ios.deployment_target = '10.0'
-  s.libraries = xml2
+  s.libraries = 'xml2'
 
   s.frameworks = 'UIKit',
                   'Foundation',

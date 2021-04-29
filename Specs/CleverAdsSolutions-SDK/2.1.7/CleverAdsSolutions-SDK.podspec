@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
   s.subspec 'AdColony' do |b|
     b.source_files = 'CASMediation/CASAdColonyProvider.swift'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'AdColony', '~> 4.6.0'
+    b.dependency 'AdColony', '4.6.0'
   end
 
   s.subspec 'SuperAwesome' do |b|

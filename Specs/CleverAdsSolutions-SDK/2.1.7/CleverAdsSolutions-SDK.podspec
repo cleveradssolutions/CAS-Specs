@@ -191,7 +191,7 @@ Pod::Spec.new do |s|
     b.dependency 'CleverAdsSolutions-SDK/AppLovin', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/InMobi', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/FBAudienceNetwork', "#{s.version}"
-    b.dependency 'CleverAdsSolutions-SDK/YandexAdsProxy', "#{s.version}"
+    b.dependency 'CleverAdsSolutions-SDK/YandexAds', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/Kidoz', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/StartApp', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/FairBid', "#{s.version}"

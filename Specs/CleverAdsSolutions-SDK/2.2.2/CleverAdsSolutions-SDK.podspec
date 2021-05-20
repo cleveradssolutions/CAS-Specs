@@ -103,7 +103,7 @@ Pod::Spec.new do |s|
     b.private_header_files = 'CASMediation/Vungle/CASVungleBridge.h'
     b.preserve_paths = 'CASMediation/Vungle/module.modulemap'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'VungleSDK-iOS', '=> 6.9.2'
+    b.dependency 'VungleSDK-iOS', '>= 6.9.2'
   end
 
   s.subspec 'Mintegral' do |b|

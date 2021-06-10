@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "CleverAdsSolutions-SDK"
-  s.version             = "2.0.0"
+  s.version             = "2.3.0"
   s.summary             = "Monetize your mobile applications with Clever Ads Solutions iOS framework"
   s.homepage            = "https://github.com/cleveradssolutions/CAS-iOS"
   s.license             = { :type => "Commercial", :file => "LICENSE.md" }
@@ -12,8 +12,6 @@ Pod::Spec.new do |s|
   s.requires_arc        = true
   s.static_framework    = true
   s.xcconfig            = { 'OTHER_LDFLAGS' => '-ObjC', 'SWIFT_INCLUDE_PATHS' => '$(PODS_TARGET_SRCROOT)/**'}
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 arm64e armv7 armv7s', 'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'i386 x86_64'}
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 arm64e armv7 armv7s', 'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'i386 x86_64'}
   s.default_subspec  = 'Main'
   s.cocoapods_version = '>= 1.10.0'
 
@@ -24,79 +22,80 @@ Pod::Spec.new do |s|
   s.subspec 'GoogleAds' do |b|
     b.source_files = 'CASMediation/CASAdMobProvider.swift'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'Google-Mobile-Ads-SDK', '8.1.0'
+    b.dependency 'Google-Mobile-Ads-SDK', '~> 8.6'
   end
 
   s.subspec 'UnityAds' do |b|
     b.source_files = 'CASMediation/CASUnityAdsProvider.swift'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'UnityAds', '~> 3.6.0'
+    b.dependency 'UnityAds', '~> 3.7.2'
   end
 
   s.subspec 'AppLovin' do |b|
     b.source_files = 'CASMediation/CASAppLovinProvider.swift'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'AppLovinSDK', '~> 6.15.2'
+    b.dependency 'AppLovinSDK', '~> 10.3.0'
   end
 
   s.subspec 'InMobi' do |b|
     b.source_files = 'CASMediation/CASInMobiProvider.swift'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'InMobiSDK/Core', '~> 9.1.5'
+    b.dependency 'InMobiSDK/Core', '~> 9.1.7'
   end
 
   s.subspec 'AdColony' do |b|
     b.source_files = 'CASMediation/CASAdColonyProvider.swift'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'AdColony', '~> 4.5.0'
+    b.dependency 'AdColony', '~> 4.6.0'
   end
 
   s.subspec 'SuperAwesome' do |b|
     b.source_files = 'CASMediation/CASSuperAwesomeProvider.swift'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'SuperAwesome', '~> 7.2.19'
+    b.dependency 'SuperAwesome', '~> 8.1.0'
   end
 
   s.subspec 'FBAudienceNetwork' do |b|
     b.source_files = 'CASMediation/CASFacebookProvider.swift'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'FBAudienceNetwork', '~> 6.3.0'
+    b.dependency 'FBAudienceNetwork', '~> 6.5.0'
   end
 
   s.subspec 'YandexAds' do |b|
     b.source_files = 'CASMediation/CASYandexProvider.swift'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'YandexMobileAds', '>= 3.4.0'
+    b.dependency 'YandexMobileAds', '~> 4.1.2'
+    b.dependency 'YandexMobileMetrica', '~> 3.15.1'
   end
 
   s.subspec 'YandexAdsProxy' do |b|
     b.source_files = 'CASMediation/CASYandexProvider.swift'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'YandexMobileAdsProxy', '>= 3.4.0'
-  end
-
-  s.subspec 'Verizon' do |b|
-    b.source_files = 'CASMediation/CASVerizonProvider.swift'
-    b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'Verizon-Ads-StandardEdition', '~> 1.9.0'
+    b.dependency 'YandexMobileAdsProxy', '~> 4.1.2'
   end
 
   s.subspec 'MoPub' do |b|
     b.source_files = 'CASMediation/CASMoPubProvider.swift'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'mopub-ios-sdk/Core', '~> 5.16.1'
+    b.dependency 'mopub-ios-sdk/Core', '~> 5.17.0'
   end
 
   s.subspec 'MyTarget' do |b|
     b.source_files = 'CASMediation/CASMyTargetProvider.swift'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'myTargetSDK', '~> 5.10.0'
+    b.dependency 'myTargetSDK', '~> 5.11.0'
   end
 
-  s.subspec 'MobFox' do |b|
-    #b.source_files = 'CASMediation/CASMobFoxProvider.swift'
+  s.subspec 'Tapjoy' do |b|
+    b.source_files = 'CASMediation/CASTapjoyProvider.swift'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    #b.dependency 'MFXSDK_Native', '~> 4.2.2'
+    b.dependency 'TapjoySDK', '~> 12.8.0'
+  end
+
+  s.subspec 'FairBid' do |b|
+    b.source_files = 'CASMediation/CASFairBidProvider.swift'
+    b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
+    b.dependency 'FairBidSDK', '~> 3.15.0'
   end
 
   s.subspec 'Vungle' do |b|
@@ -105,7 +104,15 @@ Pod::Spec.new do |s|
     b.private_header_files = 'CASMediation/Vungle/CASVungleBridge.h'
     b.preserve_paths = 'CASMediation/Vungle/module.modulemap'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'VungleSDK-iOS', '~> 6.9.1'
+    b.dependency 'VungleSDK-iOS', '~> 6.9'
+  end
+
+  s.subspec 'Mintegral' do |b|
+    b.source_files = 'CASMediation/CASMintegralProvider.swift'
+    b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
+    b.dependency 'MintegralAdSDK/BidBannerAd', '~> 6.9.3'
+    b.dependency 'MintegralAdSDK/BidInterstitialVideoAd', '~> 6.9.3'
+    b.dependency 'MintegralAdSDK/BidRewardVideoAd', '~> 6.9.3'
   end
 
   s.subspec 'IronSource' do |b|
@@ -114,7 +121,7 @@ Pod::Spec.new do |s|
     b.private_header_files = 'CASMediation/IronSource/CASIronSourceBridge.h'
     b.preserve_paths = 'CASMediation/IronSource/module.modulemap'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'IronSourceSDK', '7.1.1.0'
+    b.dependency 'IronSourceSDK', '~> 7.1.5'
   end
 
   s.subspec 'Kidoz' do |b|
@@ -129,22 +136,13 @@ Pod::Spec.new do |s|
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
   end
 
-  s.subspec 'AmazonAd' do |b|
-    b.source_files = 'CASMediation/Amazon/CASAmazonProvider.swift',
-                     'CASMediation/Amazon/CASAmazonBridge.h'
-    b.private_header_files = 'CASMediation/Amazon/CASAmazonBridge.h'
-    b.preserve_paths = 'CASMediation/Amazon/module.modulemap'
-    b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'AmazonAd', '>= 3.1.0'
-  end
-
   s.subspec 'Chartboost' do |b|
     b.source_files = 'CASMediation/Chartboost/CASChartboostProvider.swift',
                      'CASMediation/Chartboost/CASChartboostBridge.h'
     b.private_header_files = 'CASMediation/Chartboost/CASChartboostBridge.h'
     b.preserve_paths = 'CASMediation/Chartboost/module.modulemap'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'ChartboostSDK', '~> 8.4.1'
+    b.dependency 'ChartboostSDK', '~> 8.4.0'
   end
 
   s.subspec 'StartApp' do |b|
@@ -153,7 +151,7 @@ Pod::Spec.new do |s|
     b.private_header_files = 'CASMediation/StartApp/CASStartAppBridge.h'
     b.preserve_paths = 'CASMediation/StartApp/module.modulemap'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'StartAppSDK', '~> 4.6.1'
+    b.dependency 'StartAppSDK', '~> 4.6.0'
   end
 
   s.subspec 'General' do |b|
@@ -175,10 +173,10 @@ Pod::Spec.new do |s|
     b.dependency 'CleverAdsSolutions-SDK/AppLovin', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/InMobi', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/FBAudienceNetwork', "#{s.version}"
-    b.dependency 'CleverAdsSolutions-SDK/YandexAdsProxy', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/Kidoz', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/StartApp', "#{s.version}"
+    b.dependency 'CleverAdsSolutions-SDK/FairBid', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/SuperAwesome', "#{s.version}"
-    b.dependency 'CleverAdsSolutions-SDK/MoPub', "#{s.version}"
+    b.dependency 'CleverAdsSolutions-SDK/Mintegral', "#{s.version}"
   end
 end

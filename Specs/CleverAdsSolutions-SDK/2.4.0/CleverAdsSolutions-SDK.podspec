@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.subspec 'UnityAds' do |b|
     b.source_files = 'CASMediation/CASUnityAdsProvider.swift'
     b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
-    b.dependency 'UnityAds', '~> 3.7.2'
+    b.dependency 'UnityAds', '3.7.2'
   end
 
   s.subspec 'AppLovin' do |b|

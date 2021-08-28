@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.swift_versions      = ['4.2', '5.0']
   s.requires_arc        = true
   s.static_framework    = true
-  s.xcconfig            = { 'OTHER_LDFLAGS' => '-ObjC', 'SWIFT_INCLUDE_PATHS' => '$(PODS_TARGET_SRCROOT)/**'}
+  s.xcconfig            = { 'OTHER_LDFLAGS' => '-ObjC', 'SWIFT_INCLUDE_PATHS' => '$(PODS_TARGET_SRCROOT)/**', 'SWIFT_VERSION' => '5.0' }
   s.default_subspec  = 'Main'
   s.cocoapods_version = '>= 1.10.0'
 

@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name                = "CleverAdsSolutions"
+  s.name                = "CleverAdsSolutions-M"
   s.version             = "2.4.3"
   s.summary             = "Monetize your mobile applications with Clever Ads Solutions iOS framework"
   s.homepage            = "https://github.com/cleveradssolutions/CAS-iOS"

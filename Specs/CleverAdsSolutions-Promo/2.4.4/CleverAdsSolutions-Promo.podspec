@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Promo' do |b|
     b.vendored_frameworks = 'CASPromo/CASPromo.xcframework'
-    b.dependency 'CleverAdsSolutions-SDK/Base', "#{s.version}"
+    b.dependency 'CleverAdsSolutions-Promo/Base'
   end
 
 end

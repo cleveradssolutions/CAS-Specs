@@ -48,7 +48,7 @@ Pod::Spec.new do |s|
   s.subspec 'SuperAwesome' do |b|
     b.source_files = 'CASMediation/CASSuperAwesomeProvider.swift'
     b.dependency 'CleverAdsSolutions-Base', "#{s.version}"
-    b.dependency 'SuperAwesome', '~> 8.1.0'
+    b.dependency 'SuperAwesome', '8.1.1' # 8.1.3 changed API
   end
 
   s.subspec 'FBAudienceNetwork' do |b|

@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.subspec 'AppLovin' do |b|
     b.source_files = 'CASMediation/CASAppLovinProvider.swift'
     b.dependency 'CleverAdsSolutions-Base', "#{s.version}"
-    b.dependency 'AppLovinSDK', '~> 10.3.5'
+    b.dependency 'AppLovinSDK', '~> 10.3.6'
   end
 
   s.subspec 'InMobi' do |b|
@@ -60,7 +60,7 @@ Pod::Spec.new do |s|
   s.subspec 'YandexAds' do |b|
     b.source_files = 'CASMediation/CASYandexProvider.swift'
     b.dependency 'CleverAdsSolutions-Base', "#{s.version}"
-    b.dependency 'YandexMobileAds', '~> 4.3.1'
+    b.dependency 'YandexMobileAds', '~> 4.4.0'
     b.dependency 'YandexMobileMetrica', '~> 3.15.1'
   end
 

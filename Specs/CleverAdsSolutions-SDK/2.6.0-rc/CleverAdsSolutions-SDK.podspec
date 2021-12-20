@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.swift_versions        = ['5.0']
   s.requires_arc          = true
   s.static_framework      = true
-  s.xcconfig              = { 'OTHER_LDFLAGS' => '-ObjC', 'SWIFT_INCLUDE_PATHS' => '$(PODS_TARGET_SRCROOT)/**'}
+  s.xcconfig              = { 'OTHER_LDFLAGS' => '-ObjC', 'SWIFT_INCLUDE_PATHS' => '$(PODS_TARGET_SRCROOT)/**', 'LIBRARY_SEARCH_PATHS' => '$(PODS_TARGET_SRCROOT)/libs/CASAdmobAdapter.xcframework/**' }
   s.default_subspec       = 'Optimal'
   s.cocoapods_version     = '>= 1.10.0'
 

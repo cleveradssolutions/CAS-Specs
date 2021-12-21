@@ -11,13 +11,13 @@ Pod::Spec.new do |s|
   s.swift_versions        = ['5.0']
   s.requires_arc          = true
   s.static_framework      = true
-  s.xcconfig              = { 'OTHER_LDFLAGS' => '-ObjC', 'LIBRARY_SEARCH_PATHS' => '${PODS_ROOT}/CleverAdsSolutions-SDK/libs/CASAdmobAdapter.xcframework/**' }
+  s.xcconfig              = { 'OTHER_LDFLAGS' => '-ObjC' }
   s.pod_target_xcconfig   = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_TARGET_SRCROOT)/**' }
   s.default_subspec       = 'Optimal'
   s.cocoapods_version     = '>= 1.10.0'
 
   s.subspec 'GoogleAds' do |b|
-    b.vendored_frameworks = 'libs/CASAdmobAdapter.xcframework'
+    b.source_files = 'CASMediation/GoogleAds/*.swift'
     b.dependency 'CleverAdsSolutions-Base', "#{s.version}"
     b.dependency 'Google-Mobile-Ads-SDK', '~> 8.13'
   end
@@ -92,8 +92,8 @@ Pod::Spec.new do |s|
     b.source_files = 'CASMediation/CASPangleProvider.swift'
     b.vendored_frameworks = 'libs/CASmByteDanceAdapter.framework'
     b.dependency 'CleverAdsSolutions-Base', "#{s.version}"
-    b.dependency 'Ads-Global/BUAdSDK', '~> 4.1.0.2'
-    b.dependency 'Ads-Global/Domestic', '~> 4.1.0.2'
+    b.dependency 'Ads-Global/BUAdSDK', '~> 4.2.0.2'
+    b.dependency 'Ads-Global/Domestic', '~> 4.2.0.2'
   end
 
   s.subspec 'Tapjoy' do |b|
@@ -107,9 +107,9 @@ Pod::Spec.new do |s|
     b.source_files = 'CASMediation/CASMintegralProvider.swift'
     b.vendored_frameworks = 'libs/CASmMintegralAdapter.framework'
     b.dependency 'CleverAdsSolutions-Base', "#{s.version}"
-    b.dependency 'MintegralAdSDK/BidBannerAd', '~> 7.0.4'
-    b.dependency 'MintegralAdSDK/BidInterstitialVideoAd', '~> 7.0.4'
-    b.dependency 'MintegralAdSDK/BidRewardVideoAd', '~> 7.0.4'
+    b.dependency 'MintegralAdSDK/BidBannerAd', '~> 7.0.6'
+    b.dependency 'MintegralAdSDK/BidInterstitialVideoAd', '~> 7.0.6'
+    b.dependency 'MintegralAdSDK/BidRewardVideoAd', '~> 7.0.6'
   end
 
   s.subspec 'IronSource' do |b|

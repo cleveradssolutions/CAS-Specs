@@ -120,7 +120,7 @@ Pod::Spec.new do |s|
     b.private_header_files = 'CASMediation/IronSource/CASIronSourceBridge.h'
     b.preserve_paths = 'CASMediation/IronSource/module.modulemap'
     b.dependency 'CleverAdsSolutions-Base', "#{s.version}"
-    b.dependency 'IronSourceSDK', '~> 7.1.14'
+    b.dependency 'IronSourceSDK', '~> 7.2.0'
   end
 
   s.subspec 'Kidoz' do |b|

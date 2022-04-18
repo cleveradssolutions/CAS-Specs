@@ -55,12 +55,16 @@ Pod::Spec.new do |s|
     b.dependency 'Alamofire', '5.4.4'
   end
 
-  s.subspec 'FBAudienceNetwork' do |b|
+  s.subspec 'AudienceNetwork' do |b|
     b.source_files = 'CASMediation/CASFacebookProvider.swift'
     b.vendored_frameworks = 'libs/CASmFacebookAdapter.framework'
     b.vendored_frameworks = 'libs/FacebookAdapter.xcframework'
     b.dependency 'CleverAdsSolutions-Base', "#{s.version}"
     b.dependency 'FBAudienceNetwork', '~> 6.10.0'
+  end
+
+  s.subspec 'FBAudienceNetwork' do |b|
+    b.dependency 'CleverAdsSolutions-SDK/AudienceNetwork', "#{s.version}"
   end
 
   s.subspec 'YandexAds' do |b|

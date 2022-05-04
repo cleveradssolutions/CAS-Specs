@@ -139,7 +139,7 @@ Pod::Spec.new do |s|
     b.private_header_files = 'CASMediation/Chartboost/CASChartboostBridge.h'
     b.preserve_paths = 'CASMediation/Chartboost/module.modulemap'
     b.dependency 'CleverAdsSolutions-Base', "#{s.version}"
-    b.dependency 'IronSourceSDK', '~> 8.5.0.2'
+    b.dependency 'ChartboostSDK', '~> 8.5.0.2'
   end
 
   s.subspec 'Optimal' do |b|

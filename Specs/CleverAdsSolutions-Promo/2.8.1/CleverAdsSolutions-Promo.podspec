@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name                  = "CleverAdsSolutions-Promo"
-  s.version               = "2.8.0"
+  s.version               = "2.8.1"
   s.summary               = "Clever Ads Solutions iOS internal cross promo module"
-  s.homepage              = "https://github.com/cleveradssolutions/CAS-iOS#step-2-add-cross-promotion-framework"
+  s.homepage              = "https://github.com/cleveradssolutions/CAS-iOS/wiki/Cross-promotion"
   s.license               = { :type => "Commercial", :file => "LICENSE.md" }
   s.author                = { "CleverAdsSolutions" => "support@cleveradssolutions.com" }
   s.source                = { :http => "https://github.com/cleveradssolutions/CAS-iOS/releases/download/#{s.version}/CleverAdsSolutionsPromo.tar.gz"  }
@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.cocoapods_version     = '>= 1.10.0'
 
   s.vendored_frameworks = 'CASPromo/CASPromo.xcframework'
-  s.dependency 'CleverAdsSolutions-Base', "#{s.version}"
+  s.dependency 'CleverAdsSolutions-Base'
 
 end

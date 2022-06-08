@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage              = "https://github.com/cleveradssolutions/CAS-iOS/wiki/Cross-promotion"
   s.license               = { :type => "Commercial", :file => "LICENSE.md" }
   s.author                = { "CleverAdsSolutions" => "support@cleveradssolutions.com" }
-  s.source                = { :http => "https://github.com/cleveradssolutions/CAS-iOS/releases/download/2.8.1.1/CleverAdsSolutionsPromo.tar.gz"  }
+  s.source                = { :http => "https://github.com/cleveradssolutions/CAS-iOS/releases/download/2.8.1/CleverAdsSolutionsPromo.tar.gz"  }
   s.platform              = :ios
   s.ios.deployment_target = '10.0'
   s.swift_versions        = ['5.0']

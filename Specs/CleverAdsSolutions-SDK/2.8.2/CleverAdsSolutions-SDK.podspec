@@ -118,7 +118,7 @@ Pod::Spec.new do |s|
   s.subspec 'Fyber' do |b|
     b.source_files = 'CASMediation/Fyber/*.swift'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'Fyber_Marketplace_SDK', '~> 9.6.0'
+    b.dependency 'Fyber_Marketplace_SDK', '~> 8.1.5'
   end
 
   s.subspec 'IronSource' do |b|

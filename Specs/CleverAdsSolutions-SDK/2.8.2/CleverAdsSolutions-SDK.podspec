@@ -97,8 +97,7 @@ Pod::Spec.new do |s|
     b.source_files = 'CASMediation/CASPangleProvider.swift'
     b.vendored_frameworks = 'libs/CASmByteDanceAdapter.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'Ads-Global/BUAdSDK', '4.5.2.3'
-    b.dependency 'Ads-Global/Domestic', '4.5.2.3'
+    b.dependency 'Ads-Global', '4.5.2.3'
   end
 
   s.subspec 'Tapjoy' do |b|

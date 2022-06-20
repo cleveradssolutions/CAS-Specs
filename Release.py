@@ -25,6 +25,8 @@ if "-filter" in sys.argv:
         filter = sys.argv[argIndex + 1]
 
 for spec in os.listdir(rootDir + "/Source"):
+    if spec.startswith("."):
+        continue
     specSourcePath = rootDir + "/Source/" + spec
 
     if filter and filter not in spec:

@@ -148,6 +148,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Optimal' do |b|
+    b.dependency 'CleverAdsSolutions-Base', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/GoogleAds', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/UnityAds', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/IronSource', "#{s.version}"
@@ -163,6 +164,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Families' do |b|
+    b.dependency 'CleverAdsSolutions-Base', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/GoogleAds', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/UnityAds', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/IronSource', "#{s.version}"

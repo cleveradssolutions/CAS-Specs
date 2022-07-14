@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = "CleverAdsSolutions-SDK"
-  s.version               = "2.8.3-rc1"
+  s.version               = "2.8.3"
   s.summary               = "Monetize your mobile applications easy with Clever Ads Solutions iOS framework"
   s.homepage              = "https://github.com/cleveradssolutions/CAS-iOS"
   s.license               = { :type => "Commercial", :file => "LICENSE.md" }
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.subspec 'GoogleAds' do |b|
     b.source_files = 'CASMediation/GoogleAds/*.swift'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'Google-Mobile-Ads-SDK', '~> 9.6.0'
+    b.dependency 'Google-Mobile-Ads-SDK', '~> 9.7.0'
   end
 
   s.subspec 'UnityAds' do |b|
@@ -59,7 +59,7 @@ Pod::Spec.new do |s|
     b.source_files = 'CASMediation/CASFacebookProvider.swift'
     b.vendored_frameworks = 'libs/CASmFacebookAdapter.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'FBAudienceNetwork', '~> 6.11.1'
+    b.dependency 'FBAudienceNetwork', '~> 6.11.2'
   end
 
   s.subspec 'FBAudienceNetwork' do |b|
@@ -69,7 +69,7 @@ Pod::Spec.new do |s|
   s.subspec 'YandexAds' do |b|
     b.source_files = 'CASMediation/CASYandexProvider.swift'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'YandexMobileAds', '~> 5.0.2'
+    b.dependency 'YandexMobileAds', '~> 5.1.0'
     #b.dependency 'YandexMobileMetrica', '~> 4.1.1'
   end
 
@@ -97,7 +97,8 @@ Pod::Spec.new do |s|
     b.source_files = 'CASMediation/CASPangleProvider.swift'
     b.vendored_frameworks = 'libs/CASmByteDanceAdapter.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'Ads-Global', '4.5.2.4'
+    b.dependency 'Ads-Global/BUAdSDK', '4.3.1.9'
+    b.dependency 'Ads-Global/Domestic', '4.3.1.9'
   end
 
   s.subspec 'Tapjoy' do |b|
@@ -111,7 +112,7 @@ Pod::Spec.new do |s|
     b.source_files = 'CASMediation/CASMintegralProvider.swift'
     b.vendored_frameworks = 'libs/CASmMintegralAdapter.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'MintegralAdSDK', '~> 7.1.7'
+    b.dependency 'MintegralAdSDK', '~> 7.1.8'
   end
 
   s.subspec 'Fyber' do |b|
@@ -126,7 +127,7 @@ Pod::Spec.new do |s|
     b.private_header_files = 'CASMediation/IronSource/CASIronSourceBridge.h'
     b.preserve_paths = 'CASMediation/IronSource/module.modulemap'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'IronSourceSDK', '7.2.3'
+    b.dependency 'IronSourceSDK', '7.2.3.1'
   end
 
   s.subspec 'Kidoz' do |b|

@@ -62,7 +62,7 @@ for spec in os.listdir(rootDir + "/Source"):
     print("Update " + specName + " version " + specVersion + "\n\tTo: " + specDestination)
     shutil.copyfile(specSourcePath, specDestination)
 
-    if 'CleverAdsSolutions-Base' == specName: 
+    if 'CleverAdsSolutions-Base' == specName and not '-rc' in specVersion: 
         shiledInfo = {
             "schemaVersion": 1,
             "label": "Cocoapods",

@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.subspec 'AppLovin' do |b|
     b.source_files = 'CASMediation/AppLovin/*.swift'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'AppLovinSDK', '~> 11.4.3'
+    b.dependency 'AppLovinSDK', '~> 11.4.4'
   end
 
   s.subspec 'InMobi' do |b|
@@ -119,7 +119,7 @@ Pod::Spec.new do |s|
     b.source_files = 'CASMediation/CASMintegralProvider.swift'
     b.vendored_frameworks = 'libs/CASmMintegralAdapter.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'MintegralAdSDK', '~> 7.1.9'
+    b.dependency 'MintegralAdSDK', '~> 7.2.1'
   end
 
   s.subspec 'Chartboost' do |b|

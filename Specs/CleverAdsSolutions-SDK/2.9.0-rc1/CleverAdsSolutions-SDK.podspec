@@ -36,16 +36,14 @@ Pod::Spec.new do |s|
 
   s.subspec 'InMobi' do |b|
     b.source_files = 'CASMediation/CASInMobiProvider.swift'
-    b.vendored_frameworks = 'libs/CASmInMobiAdapter.xcframework'
-    b.vendored_frameworks = 'libs/CASiInMobiAdapter.xcframework'
+    b.vendored_frameworks = 'libs/CASmInMobiAdapter.xcframework', 'libs/CASiInMobiAdapter.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
     b.dependency 'InMobiSDK/Core', '~> 10.0.8'
   end
 
   s.subspec 'AdColony' do |b|
     b.source_files = 'CASMediation/CASAdColonyProvider.swift'
-    b.vendored_frameworks = 'libs/CASmAdColonyAdapter.xcframework'
-    b.vendored_frameworks = 'libs/CASiAdColonyAdapter.xcframework'
+    b.vendored_frameworks = 'libs/CASmAdColonyAdapter.xcframework', 'libs/CASiAdColonyAdapter.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
     b.dependency 'AdColony', '~> 4.9.0'
   end
@@ -59,8 +57,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'AudienceNetwork' do |b|
     b.source_files = 'CASMediation/CASFacebookProvider.swift'
-    b.vendored_frameworks = 'libs/CASmFacebookAdapter.xcframework'
-    b.vendored_frameworks = 'libs/CASiFacebookAdapter.xcframework'
+    b.vendored_frameworks = 'libs/CASmFacebookAdapter.xcframework', 'libs/CASiFacebookAdapter.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
     b.dependency 'FBAudienceNetwork', '~> 6.11.2'
   end
@@ -84,24 +81,21 @@ Pod::Spec.new do |s|
 
   s.subspec 'MyTarget' do |b|
     b.source_files = 'CASMediation/CASmyTargetProvider.swift'
-    b.vendored_frameworks = 'libs/CASmMyTargetAdapter.xcframework'
-    b.vendored_frameworks = 'libs/CASiMyTargetAdapter.xcframework'
+    b.vendored_frameworks = 'libs/CASmMyTargetAdapter.xcframework', 'libs/CASiMyTargetAdapter.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
     b.dependency 'myTargetSDK', '5.15.2'
   end
 
   s.subspec 'Vungle' do |b|
     b.source_files = 'CASMediation/CASVungleProvider.swift'
-    b.vendored_frameworks = 'libs/CASmVungleAdapter.xcframework'
-    b.vendored_frameworks = 'libs/CASiVungleAdapter.xcframework'
+    b.vendored_frameworks = 'libs/CASmVungleAdapter.xcframework', 'libs/CASiVungleAdapter.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
     b.dependency 'VungleSDK-iOS', '~> 6.12.0'
   end
 
   s.subspec 'Pangle' do |b|
     b.source_files = 'CASMediation/CASPangleProvider.swift'
-    b.vendored_frameworks = 'libs/CASmByteDanceAdapter.xcframework'
-    b.vendored_frameworks = 'libs/CASmPangleAdapter.xcframework'
+    b.vendored_frameworks = 'libs/CASmByteDanceAdapter.xcframework', 'libs/CASmPangleAdapter.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
     b.dependency 'Ads-Global/BUAdSDK', '4.6.2.2'
     b.dependency 'Ads-Global/Domestic', '4.6.2.2'
@@ -109,8 +103,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Tapjoy' do |b|
     b.source_files = 'CASMediation/CASTapjoyProvider.swift'
-    b.vendored_frameworks = 'libs/CASmTapjoyAdapter.framework'
-    b.vendored_frameworks = 'libs/CASiTapjoyAdapter.xcframework'
+    b.vendored_frameworks = 'libs/CASmTapjoyAdapter.framework', 'libs/CASiTapjoyAdapter.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
     b.dependency 'TapjoySDK', '~> 12.10.0'
   end
@@ -129,9 +122,8 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Fyber' do |b|
-    b.source_files = 'CASMediation/Fyber/*.{h,m,swift}',
-                    'CASMediation/Fyber/IACoreHeaders/*.h'
-    b.private_header_files = 'CASMediation/Fyber/CASFairUtils.h'
+    b.source_files = 'CASMediation/Fyber/*.{h,m,swift}', 'CASMediation/Fyber/IACoreHeaders/*.h'
+    b.private_header_files = 'CASMediation/Fyber/CASFairUtils.h', 'CASMediation/Fyber/IACoreHeaders/*.h'
     b.preserve_paths = 'CASMediation/Fyber/module.modulemap'
     b.dependency 'CleverAdsSolutions-Base'
     #b.dependency 'Fyber_Marketplace_SDK', '~> 8.1.5'
@@ -139,8 +131,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'IronSource' do |b|
-    b.source_files = 'CASMediation/IronSource/CASIronSourceBridge.h',
-                     'CASMediation/IronSource/*.swift'
+    b.source_files = 'CASMediation/IronSource/CASIronSourceBridge.h', 'CASMediation/IronSource/*.swift'
     b.private_header_files = 'CASMediation/IronSource/CASIronSourceBridge.h'
     b.preserve_paths = 'CASMediation/IronSource/module.modulemap'
     b.dependency 'CleverAdsSolutions-Base'
@@ -148,8 +139,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Kidoz' do |b|
-    b.source_files = 'CASMediation/Kidoz/CASKidozProvider.swift',
-                     'CASMediation/Kidoz/KidozSDK.h'
+    b.source_files = 'CASMediation/Kidoz/CASKidozProvider.swift', 'CASMediation/Kidoz/KidozSDK.h'
     b.private_header_files = 'CASMediation/Kidoz/KidozSDK.h'
     b.preserve_paths = 'CASMediation/Kidoz/module.modulemap'
     b.vendored_libraries = 'libs/libKidozSDK.a' # Kidoz version 8.9.3 release

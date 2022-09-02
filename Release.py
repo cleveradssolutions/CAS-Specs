@@ -12,6 +12,21 @@ if "--help" in sys.argv:
     print("\t-filter <part of spec name> to filter specs by name")
     exit()
 
+def removePodCacheVersion(podName, version):
+    cocoapods = os.path.expanduser('~/Library/Caches/CocoaPods/Pods')
+    path = cocoapods + '/Release/' + podName
+    if not os.path.exists(path):
+        for versionDirs in os.listdir(path):
+            if versionDirs.startswith(version):
+                shutil.rmtree(os.path.join(path, versionDirs))
+                print('Cache Pod removed: ' + os.path.join(path, versionDirs))
+    path = cocoapods + '/Specs/Release/' + podName
+    if not os.path.exists(path):
+        for versionSpec in os.listdir(path):
+            if versionSpec.startswith(version):
+                os.remove(os.path.join(path, versionSpec))
+                print('Cache Pod removed: ' + os.path.join(path, versionDirs))
+
 setVersion = ""
 if "-version" in sys.argv:
     argIndex = sys.argv.index("-version")
@@ -61,6 +76,7 @@ for spec in os.listdir(rootDir + "/Source"):
     specDestination += "/" + spec
     print("Update " + specName + " version " + specVersion + "\n\tTo: " + specDestination)
     shutil.copyfile(specSourcePath, specDestination)
+    removePodCacheVersion(specName, specVersion)
 
     if 'CleverAdsSolutions-Base' == specName and not '-rc' in specVersion: 
         shiledInfo = {

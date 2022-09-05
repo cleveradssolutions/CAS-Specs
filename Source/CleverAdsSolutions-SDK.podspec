@@ -95,7 +95,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Pangle' do |b|
     b.source_files = 'CASMediation/CASPangleProvider.swift'
-    b.vendored_frameworks = 'libs/CASmByteDanceAdapter.xcframework', 'libs/CASmPangleAdapter.xcframework'
+    b.vendored_frameworks = 'libs/CASmByteDanceAdapter.xcframework', 'libs/CASiPangleAdapter.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
     b.dependency 'Ads-Global/BUAdSDK', '4.6.2.2'
     b.dependency 'Ads-Global/Domestic', '4.6.2.2'

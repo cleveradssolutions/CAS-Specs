@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
   s.subspec 'SuperAwesome' do |b|
     b.source_files = 'CASMediation/CASSuperAwesomeProvider.swift'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'SuperAwesome', '8.3.8'
+    b.dependency 'SuperAwesome', '8.3.9'
     b.dependency 'Alamofire', '5.4.4'
   end
 

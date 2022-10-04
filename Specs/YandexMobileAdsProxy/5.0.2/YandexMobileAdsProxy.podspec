@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author                = { "Yandex LLC" => "mobads@yandex-team.ru" }
   s.source                = { :http => "https://psdata.psvgamestudio.com/Proxy/YandexAdsProxy_#{s.version}.tar.gz"  }
   s.platform              = :ios
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
   s.libraries = 'c++',
                 'z',
                 'sqlite3',

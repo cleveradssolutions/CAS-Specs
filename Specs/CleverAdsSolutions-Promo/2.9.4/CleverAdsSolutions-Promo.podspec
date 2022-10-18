@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = "CleverAdsSolutions-Promo"
-  s.version               = "2.9.2-rc2"
+  s.version               = "2.9.4"
   s.summary               = "Clever Ads Solutions iOS internal cross promo module"
   s.homepage              = "https://github.com/cleveradssolutions/CAS-iOS/wiki/Cross-promotion"
   s.license               = { :type => "Commercial", :file => "LICENSE.md" }

@@ -113,6 +113,7 @@ Pod::Spec.new do |s|
     b.vendored_frameworks = 'libs/CASmMintegralAdapter.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
     b.dependency 'MintegralAdSDK', '~> 7.2.3'
+    b.dependency 'MintegralAdSDK/BidSplashAd', '~> 7.2.3'
   end
 
   s.subspec 'Chartboost' do |b|

@@ -71,7 +71,7 @@ Pod::Spec.new do |s|
   s.subspec 'YandexAds' do |b|
     b.vendored_frameworks = 'libs/CASYandexAds.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'YandexMobileAds', '5.2.1'
+    b.dependency 'YandexMobileAds', '5.3.1'
     #b.dependency 'YandexMobileMetrica', '~> 4.1.1'
   end
 

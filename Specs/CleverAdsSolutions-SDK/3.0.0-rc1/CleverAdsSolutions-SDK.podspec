@@ -112,11 +112,15 @@ Pod::Spec.new do |s|
     b.dependency 'ChartboostSDK', '9.0.0'
   end
 
-  s.subspec 'Fyber' do |b|
-    b.vendored_frameworks = 'libs/CASDitgitalTurbine.xcframework'
+  s.subspec 'DigitalTurbine' do |b|
+    b.vendored_frameworks = 'libs/CASDigitalTurbine.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
     #b.dependency 'Fyber_Marketplace_SDK', '~> 8.1.5'
     b.dependency 'FairBidSDK', '~> 3.34.0'
+  end
+
+  s.subspec 'Fyber' do |b|
+    b.dependency 'CleverAdsSolutions-SDK/DigitalTurbine', "#{s.version}"
   end
 
   s.subspec 'IronSource' do |b|
@@ -134,12 +138,13 @@ Pod::Spec.new do |s|
     b.dependency 'CleverAdsSolutions-Base', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/GoogleAds', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/UnityAds', "#{s.version}"
+    b.dependency 'CleverAdsSolutions-SDK/YandexAds', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/IronSource', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/AdColony', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/Vungle', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/AppLovin', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/InMobi', "#{s.version}"
-    b.dependency 'CleverAdsSolutions-SDK/FBAudienceNetwork', "#{s.version}"
+    b.dependency 'CleverAdsSolutions-SDK/AudienceNetwork', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/Mintegral', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/Pangle', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/Tapjoy', "#{s.version}"
@@ -150,10 +155,10 @@ Pod::Spec.new do |s|
     b.dependency 'CleverAdsSolutions-Base', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/GoogleAds', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/UnityAds', "#{s.version}"
+    b.dependency 'CleverAdsSolutions-SDK/YandexAds', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/IronSource', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/AdColony', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/Vungle', "#{s.version}"
-    b.dependency 'CleverAdsSolutions-SDK/AppLovin', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/InMobi', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/Mintegral', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/Pangle', "#{s.version}"

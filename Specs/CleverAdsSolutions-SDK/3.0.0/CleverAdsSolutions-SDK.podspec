@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = "CleverAdsSolutions-SDK"
-  s.version               = "3.0.0-rc1"
+  s.version               = "3.0.0"
   s.summary               = "Monetize your mobile applications easy with Clever Ads Solutions iOS framework"
   s.homepage              = "https://github.com/cleveradssolutions/CAS-iOS"
   s.license               = { :type => "Commercial", :file => "LICENSE.md" }
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.subspec 'GoogleAds' do |b|
     b.vendored_frameworks = 'libs/CASGoogleAds.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'Google-Mobile-Ads-SDK', '~> 9.14.0'
+    b.dependency 'Google-Mobile-Ads-SDK', '~> 10.0.0'
   end
 
   s.subspec 'UnityAds' do |b|
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
   s.subspec 'AppLovin' do |b|
     b.vendored_frameworks = 'libs/CASAppLovin.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'AppLovinSDK', '~> 11.6.0'
+    b.dependency 'AppLovinSDK', '~> 11.7.0'
   end
 
   s.subspec 'InMobi' do |b|
@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
   s.subspec 'SuperAwesome' do |b|
     b.vendored_frameworks = 'libs/CASSuperAwesome.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'SuperAwesome', '8.5.0'
+    b.dependency 'SuperAwesome', '8.5.1'
     b.dependency 'Alamofire', '5.4.4'
   end
 
@@ -71,7 +71,7 @@ Pod::Spec.new do |s|
   s.subspec 'YandexAds' do |b|
     b.vendored_frameworks = 'libs/CASYandexAds.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'YandexMobileAds', '5.3.1'
+    b.dependency 'YandexMobileAds', '5.4.0'
     #b.dependency 'YandexMobileMetrica', '~> 4.1.1'
   end
 
@@ -102,8 +102,8 @@ Pod::Spec.new do |s|
   s.subspec 'Mintegral' do |b|
     b.vendored_frameworks = 'libs/CASMintegral.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'MintegralAdSDK', '~> 7.2.8'
-    b.dependency 'MintegralAdSDK/BidSplashAd', '~> 7.2.8'
+    b.dependency 'MintegralAdSDK', '~> 7.2.9'
+    b.dependency 'MintegralAdSDK/BidSplashAd', '~> 7.2.9'
   end
 
   s.subspec 'Chartboost' do |b|
@@ -126,7 +126,7 @@ Pod::Spec.new do |s|
   s.subspec 'IronSource' do |b|
     b.vendored_frameworks = 'libs/CASIronSource.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'IronSourceSDK', '7.2.6'
+    b.dependency 'IronSourceSDK', '7.2.7'
   end
 
   s.subspec 'Kidoz' do |b|

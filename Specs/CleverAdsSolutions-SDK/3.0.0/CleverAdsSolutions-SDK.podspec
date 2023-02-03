@@ -166,5 +166,7 @@ Pod::Spec.new do |s|
     b.dependency 'CleverAdsSolutions-SDK/MyTarget', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/Kidoz', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/SuperAwesome', "#{s.version}"
+
+    b.dependency 'CleverAdsSolutions-SDK/AppLovin', "#{s.version}" # required to build
   end
 end

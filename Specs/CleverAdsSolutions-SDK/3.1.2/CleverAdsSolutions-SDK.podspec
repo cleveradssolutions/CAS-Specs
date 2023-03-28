@@ -66,7 +66,6 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'FBAudienceNetwork' do |b|
-    b.deprecated_in_favor_of = 'CleverAdsSolutions-SDK/AudienceNetwork'
     b.dependency 'CleverAdsSolutions-SDK/AudienceNetwork', "#{s.version}"
   end
 
@@ -124,7 +123,6 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Fyber' do |b|
-    b.deprecated_in_favor_of = 'CleverAdsSolutions-SDK/DigitalTurbine'
     b.dependency 'CleverAdsSolutions-SDK/DigitalTurbine', "#{s.version}"
   end
 

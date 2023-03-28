@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage              = "https://github.com/cleveradssolutions/CAS-iOS"
   s.license               = { :type => "Commercial License", :file => "LICENSE.md" }
   s.author                = { "CleverAdsSolutions" => "support@cleveradssolutions.com" }
-  s.source                = { :http => "https://github.com/cleveradssolutions/CAS-iOS/releases/download/#{s.version}/CleverAdsSolutions.tar.gz", :type => 'tar.gz' }
+  s.source                = { :http => "https://github.com/cleveradssolutions/CAS-iOS/releases/download/#{s.version}/CleverAdsSolutions.tar.gz" }
   s.platform              = :ios, '11.0'
   s.swift_versions        = ['5.0']
   s.requires_arc          = true

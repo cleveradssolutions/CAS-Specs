@@ -129,7 +129,7 @@ Pod::Spec.new do |s|
   s.subspec 'IronSource' do |b|
     b.vendored_frameworks = 'libs/CASIronSource.xcframework'
     b.dependency 'CleverAdsSolutions-Base'
-    b.dependency 'IronSourceSDK', '7.3.0'
+    b.dependency 'IronSourceSDK', '7.3.0.0'
   end
 
   s.subspec 'Kidoz' do |b|

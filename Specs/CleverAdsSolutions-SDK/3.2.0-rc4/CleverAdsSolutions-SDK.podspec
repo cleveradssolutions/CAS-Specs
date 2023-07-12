@@ -85,9 +85,8 @@ Pod::Spec.new do |s|
 
   s.subspec 'Vungle' do |b|
     b.vendored_frameworks = 'libs/CASVungle.xcframework'
-    b.dependency 'VungleSDK-iOS', '~> 6.12.3'
+    b.dependency 'VungleAds', '~> 7.0.1'
     b.dependency 'CleverAdsSolutions-SDK/IronSource', "#{s.version}"
-    b.dependency 'CleverAdsSolutions-SDK/AppLovin', "#{s.version}"
   end
 
   s.subspec 'Pangle' do |b|

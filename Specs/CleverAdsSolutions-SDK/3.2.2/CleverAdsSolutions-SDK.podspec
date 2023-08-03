@@ -59,7 +59,7 @@ Pod::Spec.new do |s|
   s.subspec 'AudienceNetwork' do |b|
     b.vendored_frameworks = 'libs/CASAudienceNetwork.xcframework'
     b.dependency 'FBAudienceNetwork', '~> 6.12.0'
-    b.dependency 'CleverAdsSolutions-SDK/IronSource', "#{s.version}"
+    b.dependency 'CleverAdsSolutions-SDK/GoogleAds', "#{s.version}"
   end
 
   s.subspec 'FBAudienceNetwork' do |b|

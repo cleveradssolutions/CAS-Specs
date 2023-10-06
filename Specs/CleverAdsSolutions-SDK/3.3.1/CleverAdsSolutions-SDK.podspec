@@ -125,7 +125,7 @@ Pod::Spec.new do |s|
   s.subspec 'IronSource' do |b|
     b.vendored_frameworks = 'libs/CASIronSource.xcframework'
     b.dependency 'IronSourceSDK', '7.3.1.0'
-    b.dependency 'Google-Mobile-Ads-SDK', '~> 10.11.0'
+    b.dependency 'Google-Mobile-Ads-SDK', '~> 10.12.0'
     b.dependency 'CleverAdsSolutions-Base'
   end
 

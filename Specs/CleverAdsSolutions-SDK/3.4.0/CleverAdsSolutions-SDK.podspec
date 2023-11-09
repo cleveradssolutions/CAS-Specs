@@ -49,8 +49,8 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'SuperAwesome' do |b|
-    b.vendored_frameworks = 'libs/CASSuperAwesome.xcframework'
-    #b.source_files = 'Adapters/SuperAwesome/SuperAwesome/*.swift'
+    #b.vendored_frameworks = 'libs/CASSuperAwesome.xcframework'
+    b.source_files = 'Adapters/SuperAwesome/SuperAwesome/*.swift'
     b.dependency 'SuperAwesome', '9.2.1'
     b.dependency 'CleverAdsSolutions-Base'
   end

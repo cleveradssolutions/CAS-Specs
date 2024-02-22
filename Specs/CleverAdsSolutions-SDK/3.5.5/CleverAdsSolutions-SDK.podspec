@@ -132,6 +132,12 @@ Pod::Spec.new do |s|
     b.dependency 'CleverAdsSolutions-Base'
   end
   
+  s.subspec 'Madex' do |b|
+    b.vendored_frameworks = 'libs/CASMadex.xcframework'
+    b.dependency 'MadexSDK', '1.1.0'
+    b.dependency 'CleverAdsSolutions-Base'
+  end
+  
   s.subspec 'HyprMX' do |b|
     b.vendored_frameworks = 'libs/CASHyprMX.xcframework'
     b.dependency 'HyprMX', '6.2.0'

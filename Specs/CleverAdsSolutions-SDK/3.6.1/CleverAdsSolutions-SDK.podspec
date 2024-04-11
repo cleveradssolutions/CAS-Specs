@@ -150,7 +150,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Smaato' do |b|
     b.vendored_frameworks = 'libs/CASSmaato.xcframework'
-    b.dependency 'smaato-ios-sdk/Banner', '22.0.2'
+    b.dependency 'smaato-ios-sdk', '22.8.1'
     b.dependency 'smaato-ios-sdk/InApp', '22.8.1'
     b.dependency 'CleverAdsSolutions-SDK/IronSource', "#{s.version}"
   end

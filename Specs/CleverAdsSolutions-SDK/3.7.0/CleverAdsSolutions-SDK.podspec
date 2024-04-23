@@ -162,7 +162,7 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'DSPExchange' do |b|
-      b.vendored_frameworks = 'libs/CASDSPExchange.xcframework'
+      b.source_files = 'Adapters/DSPExchange/DSPExchange/*.swift'
       b.dependency 'PrebidMobile', '2.2.0'
       b.dependency 'CleverAdsSolutions-Base'
   end

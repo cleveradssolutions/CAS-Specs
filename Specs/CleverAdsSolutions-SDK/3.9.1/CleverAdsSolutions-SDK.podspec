@@ -181,6 +181,7 @@ Pod::Spec.new do |s|
     b.dependency 'CleverAdsSolutions-SDK/DTExchange', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/Bigo', "#{s.version}"
     b.dependency 'CleverAdsSolutions-SDK/AudienceNetwork', "#{s.version}"
+    b.dependency 'CleverAdsSolutions-SDK/CASExchange', "#{s.version}"
   end
 
   s.subspec 'Families' do |b|

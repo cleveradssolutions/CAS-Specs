@@ -132,6 +132,8 @@ Pod::Spec.new do |s|
   s.subspec 'Madex' do |b|
     b.vendored_frameworks = 'libs/CASMadex.xcframework'
     b.dependency 'MadexSDK', '1.5.3'
+    b.dependency 'SspnetCore', '1.5.4'
+    b.dependency 'SspnetDsp', '1.2.3'
     b.dependency 'CleverAdsSolutions-Base'
   end
   

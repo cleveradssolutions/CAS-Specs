@@ -91,6 +91,7 @@ Pod::Spec.new do |s|
   s.subspec 'Mintegral' do |b|
     b.vendored_frameworks = 'libs/CASMintegral.xcframework'
     b.dependency 'MintegralAdSDK', '7.7.5'
+    b.dependency 'MintegralAdSDK/BidSplashAd', '7.7.5'
     b.dependency 'CleverAdsSolutions-SDK/AppLovin', "#{s.version}"
   end
 

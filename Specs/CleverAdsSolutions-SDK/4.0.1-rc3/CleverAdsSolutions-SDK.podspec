@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'GoogleAds' do |b|
     b.vendored_frameworks = 'libs/CASGoogleAds.xcframework'
-    b.dependency 'Google-Mobile-Ads-SDK', '12.0.0'
+    b.dependency 'Google-Mobile-Ads-SDK', '12.1.0'
     b.dependency 'CleverAdsSolutions-SDK/IronSource', "#{s.version}"
   end
 

@@ -154,12 +154,6 @@ Pod::Spec.new do |s|
     b.dependency 'CleverAdsSolutions-Base'
   end
   
-  s.subspec 'LoopMe' do |b|
-    b.vendored_frameworks = 'libs/CASLoopMe.xcframework'
-    b.dependency 'LoopMeUnitedSDK', '7.4.23'
-    b.dependency 'CleverAdsSolutions-Base'
-  end
-  
   s.subspec 'Ogury' do |b|
     b.vendored_frameworks = 'libs/CASOgury.xcframework'
     b.dependency 'OgurySdk', '4.4.2'

@@ -148,7 +148,7 @@ Pod::Spec.new do |s|
     b.dependency 'CleverAdsSolutions-SDK/Pangle', '4.0.2'
     b.dependency 'CleverAdsSolutions-SDK/CASExchange', '4.0.2'
   end
-  
+
   s.subspec 'Families' do |b|
     b.dependency 'CleverAdsSolutions-SDK/GoogleAds', '4.0.2'
     b.dependency 'CleverAdsSolutions-SDK/LiftoffMonetize', '4.0.2'
@@ -161,4 +161,5 @@ Pod::Spec.new do |s|
     b.dependency 'CleverAdsSolutions-SDK/YandexAds', '4.0.2'
     b.dependency 'CleverAdsSolutions-SDK/SuperAwesome', '4.0.2'
     b.dependency 'CleverAdsSolutions-SDK/DTExchange', '4.0.2'
+  end
 end

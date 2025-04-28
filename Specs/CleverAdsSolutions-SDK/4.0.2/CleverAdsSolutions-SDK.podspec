@@ -147,7 +147,8 @@ Pod::Spec.new do |s|
     b.dependency 'CleverAdsSolutions-SDK/Mintegral', '4.0.2'
     b.dependency 'CleverAdsSolutions-SDK/Pangle', '4.0.2'
     b.dependency 'CleverAdsSolutions-SDK/CASExchange', '4.0.2'
-
+  end
+  
   s.subspec 'Families' do |b|
     b.dependency 'CleverAdsSolutions-SDK/GoogleAds', '4.0.2'
     b.dependency 'CleverAdsSolutions-SDK/LiftoffMonetize', '4.0.2'

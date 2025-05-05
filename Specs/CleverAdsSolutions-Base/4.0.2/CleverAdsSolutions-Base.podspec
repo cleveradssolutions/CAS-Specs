@@ -7,8 +7,8 @@ Pod::Spec.new do |s|
   s.author                = { "CleverAdsSolutions LTD" => "support@cas.ai" }
   s.source                = { :http => "https://github.com/cleveradssolutions/CAS-iOS/releases/download/#{s.version}/CleverAdsSolutionsBase.tar.gz"  }
   s.platform              = :ios, '13.0'
+  s.static_framework      = true
   s.swift_version         = '5.0'
-  s.swift_versions        = '5.0'
   s.cocoapods_version     = '>= 1.13.0'
 
   s.frameworks = 'UIKit', 'Network', 'WebKit', 'AVFoundation', 'Foundation'

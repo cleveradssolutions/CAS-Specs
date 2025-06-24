@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'InMobi' do |b|
-    b.dependency 'CASMediationInMobi', '10.8.3.0'
+    b.dependency 'CASMediationInMobi', '10.8.3.1'
     b.dependency 'CleverAdsSolutions-Base', '4.1.2'
   end
 

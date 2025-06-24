@@ -1,0 +1,29 @@
+{
+  "name": "CASMediationAudienceNetwork",
+  "version": "6.20.0.1",
+  "summary": "The AudienceNetwork mediation adapter is a library that handles communication between the CAS.AI SDK and the AudienceNetwork SDK. It enables you to load ads from AudienceNetwork using the mediation feature in the CAS.AI SDK.",
+  "homepage": "https://github.com/cleveradssolutions/CAS-iOS",
+  "license": {
+    "type": "Commercial License",
+    "file": "LICENSE.md"
+  },
+  "authors": {
+    "CleverAdsSolutions LTD": "support@cas.ai"
+  },
+  "source": {
+    "http": "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.1.2/CASMediationAudienceNetwork-6.20.0.1.zip"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "swift_versions": "5.0",
+  "static_framework": true,
+  "vendored_frameworks": "CASMediationAudienceNetwork.xcframework",
+  "dependencies": {
+    "FBAudienceNetwork": [
+      "6.20.0"
+    ],
+    "CASMediationGoogleAds": []
+  },
+  "swift_version": "5.0"
+}

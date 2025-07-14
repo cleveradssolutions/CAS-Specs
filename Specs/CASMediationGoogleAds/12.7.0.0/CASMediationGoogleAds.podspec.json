@@ -11,7 +11,7 @@
     "CleverAdsSolutions LTD": "support@cas.ai"
   },
   "source": {
-    "http": "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.2.0/CASMediationGoogleAds-12.7.0.0.zip"
+    "http": "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.2.1/CASMediationGoogleAds-12.7.0.0.zip"
   },
   "platforms": {
     "ios": "13.0"

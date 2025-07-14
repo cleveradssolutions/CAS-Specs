@@ -11,7 +11,7 @@
     "CleverAdsSolutions LTD": "support@cas.ai"
   },
   "source": {
-    "http": "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.2.0/CASMediationDTExchange-8.3.7.1.zip"
+    "http": "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.2.1/CASMediationDTExchange-8.3.7.1.zip"
   },
   "platforms": {
     "ios": "13.0"

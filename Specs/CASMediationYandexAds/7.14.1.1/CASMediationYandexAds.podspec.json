@@ -26,6 +26,22 @@
     "DivKit": [
       "32.7.1"
     ],
+    "AppMetricaAdSupport": [
+      ">= 5.11.0",
+      "< 5.12.0"
+    ],
+    "AppMetricaCore": [
+      ">= 5.11.0",
+      "< 5.12.0"
+    ],
+    "AppMetricaCrashes": [
+      ">= 5.11.0",
+      "< 5.12.0"
+    ],
+    "AppMetricaLibraryAdapter": [
+      ">= 5.11.0",
+      "< 5.12.0"
+    ],
     "CASMediationIronSource": []
   },
   "swift_version": "5.0"

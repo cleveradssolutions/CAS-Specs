@@ -232,7 +232,7 @@
       "name": "Ogury",
       "dependencies": {
         "CASMediationOgury": [
-          "5.1.0.0"
+          "5.1.1.0"
         ],
         "CleverAdsSolutions-Base": [
           "4.4.0-rc1"

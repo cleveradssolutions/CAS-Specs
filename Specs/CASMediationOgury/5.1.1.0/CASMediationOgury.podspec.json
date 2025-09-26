@@ -1,0 +1,29 @@
+{
+  "name": "CASMediationOgury",
+  "version": "5.1.1.0",
+  "summary": "The Ogury mediation adapter is a library that handles communication between the CAS.AI SDK and the Ogury SDK. It enables you to load ads from Ogury using the mediation feature in the CAS.AI SDK.",
+  "homepage": "https://github.com/cleveradssolutions/CAS-iOS",
+  "license": {
+    "type": "Commercial License",
+    "file": "LICENSE.md"
+  },
+  "authors": {
+    "CleverAdsSolutions LTD": "support@cas.ai"
+  },
+  "source": {
+    "http": "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.4.0-rc1/CASMediationOgury-5.1.1.0.zip"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "swift_versions": "5.0",
+  "static_framework": true,
+  "vendored_frameworks": "CASMediationOgury.xcframework",
+  "dependencies": {
+    "OgurySdk": [
+      "5.1.1"
+    ],
+    "CleverAdsSolutions-Base": []
+  },
+  "swift_version": "5.0"
+}

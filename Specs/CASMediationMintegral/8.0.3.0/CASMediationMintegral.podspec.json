@@ -1,0 +1,32 @@
+{
+  "name": "CASMediationMintegral",
+  "version": "8.0.3.0",
+  "summary": "The Mintegral mediation adapter is a library that handles communication between the CAS.AI SDK and the Mintegral SDK. It enables you to load ads from Mintegral using the mediation feature in the CAS.AI SDK.",
+  "homepage": "https://github.com/cleveradssolutions/CAS-iOS",
+  "license": {
+    "type": "Commercial License",
+    "file": "LICENSE.md"
+  },
+  "authors": {
+    "CleverAdsSolutions LTD": "support@cas.ai"
+  },
+  "source": {
+    "http": "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.5.0/CASMediationMintegral-8.0.3.0.zip"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "swift_versions": "5.0",
+  "static_framework": true,
+  "vendored_frameworks": "CASMediationMintegral.xcframework",
+  "dependencies": {
+    "MintegralAdSDK": [
+      "8.0.3"
+    ],
+    "MintegralAdSDK/BidSplashAd": [
+      "8.0.3"
+    ],
+    "CleverAdsSolutions-Base": []
+  },
+  "swift_version": "5.0"
+}

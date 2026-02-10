@@ -89,7 +89,7 @@
       "name": "DTExchange",
       "dependencies": {
         "CASMediationDTExchange": [
-          "8.4.4.0"
+          "8.4.4.1"
         ],
         "CleverAdsSolutions-Base": [
           "4.6.0"

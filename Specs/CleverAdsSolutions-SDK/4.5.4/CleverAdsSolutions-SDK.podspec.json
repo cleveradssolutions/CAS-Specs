@@ -384,28 +384,13 @@
         "CleverAdsSolutions-SDK/Chartboost": [
           "4.5.4"
         ],
-        "CleverAdsSolutions-SDK/DTExchange": [
+        "CleverAdsSolutions-SDK/Kidoz": [
           "4.5.4"
         ],
         "CleverAdsSolutions-SDK/Mintegral": [
           "4.5.4"
         ],
-        "CleverAdsSolutions-SDK/AppLovin": [
-          "4.5.4"
-        ],
-        "CleverAdsSolutions-SDK/Pangle": [
-          "4.5.4"
-        ],
-        "CleverAdsSolutions-SDK/Bigo": [
-          "4.5.4"
-        ],
         "CleverAdsSolutions-SDK/YangoAds": [
-          "4.5.4"
-        ],
-        "CleverAdsSolutions-SDK/AudienceNetwork": [
-          "4.5.4"
-        ],
-        "CleverAdsSolutions-SDK/CASExchange": [
           "4.5.4"
         ]
       }

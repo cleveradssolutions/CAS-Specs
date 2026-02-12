@@ -1,0 +1,408 @@
+{
+  "name": "CleverAdsSolutions-SDK",
+  "version": "4.6.2",
+  "summary": "Monetize your mobile applications easy with CAS.AI iOS mediation",
+  "homepage": "https://github.com/cleveradssolutions/CAS-iOS",
+  "license": {
+    "type": "Commercial License",
+    "file": "LICENSE.md"
+  },
+  "authors": {
+    "CleverAdsSolutions LTD": "support@cas.ai"
+  },
+  "source": {
+    "http": "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.0.2/LICENSE.zip"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "swift_versions": "5.0",
+  "default_subspecs": "Optimal",
+  "subspecs": [
+    {
+      "name": "IronSource",
+      "dependencies": {
+        "CASMediationIronSource": [
+          "9.3.0.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "UnityAds",
+      "dependencies": {
+        "CASMediationUnityAds": [
+          "4.16.6.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "GoogleAds",
+      "dependencies": {
+        "CASMediationGoogleAds": [
+          "13.0.0.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "LiftoffMonetize",
+      "dependencies": {
+        "CASMediationLiftoffMonetize": [
+          "7.7.0.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "InMobi",
+      "dependencies": {
+        "CASMediationInMobi": [
+          "11.1.1.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "Chartboost",
+      "dependencies": {
+        "CASMediationChartboost": [
+          "9.11.0.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "DTExchange",
+      "dependencies": {
+        "CASMediationDTExchange": [
+          "8.4.4.1"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "Kidoz",
+      "dependencies": {
+        "CASMediationKidoz": [
+          "10.1.5.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "SuperAwesome",
+      "dependencies": {
+        "CASMediationSuperAwesome": [
+          "9.4.0.1"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "Mintegral",
+      "dependencies": {
+        "CASMediationMintegral": [
+          "8.0.7.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "AppLovin",
+      "dependencies": {
+        "CASMediationAppLovin": [
+          "13.5.1.1"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "Pangle",
+      "dependencies": {
+        "CASMediationPangle": [
+          "7.9.0.6.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "Bigo",
+      "dependencies": {
+        "CASMediationBigo": [
+          "5.0.6.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "YangoAds",
+      "dependencies": {
+        "CASMediationYangoAds": [
+          "7.18.4.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "AudienceNetwork",
+      "dependencies": {
+        "CASMediationAudienceNetwork": [
+          "6.21.0.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "YsoNetwork",
+      "dependencies": {
+        "CASMediationYsoNetwork": [
+          "1.1.31.2"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "CASExchange",
+      "dependencies": {
+        "CASMediationCASExchange": [
+          "4.6.0.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "CrossPromo",
+      "dependencies": {
+        "CASMediationCrossPromo": [
+          "4.1.0.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "StartIO",
+      "dependencies": {
+        "CASMediationStartIO": [
+          "4.13.0.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "HyprMX",
+      "dependencies": {
+        "CASMediationHyprMX": [
+          "6.4.5.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "Ogury",
+      "dependencies": {
+        "CASMediationOgury": [
+          "5.2.0.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "Prado",
+      "dependencies": {
+        "CASMediationPrado": [
+          "10.1.5.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "Smaato",
+      "dependencies": {
+        "CASMediationSmaato": [
+          "22.9.3.1"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "Maticoo",
+      "dependencies": {
+        "CASMediationMaticoo": [
+          "1.5.6.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "Verve",
+      "dependencies": {
+        "CASMediationVerve": [
+          "3.7.1.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "Madex",
+      "dependencies": {
+        "CASMediationMadex": [
+          "1.7.5.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "PubMatic",
+      "dependencies": {
+        "CASMediationPubMatic": [
+          "4.12.0.0"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "Tenjin",
+      "dependencies": {
+        "TenjinSDK": [
+          "1.15.1"
+        ],
+        "CleverAdsSolutions-Base": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "Optimal",
+      "dependencies": {
+        "CleverAdsSolutions-SDK/IronSource": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/UnityAds": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/GoogleAds": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/LiftoffMonetize": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/InMobi": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/Chartboost": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/Mintegral": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/AppLovin": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/Pangle": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/Bigo": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/YangoAds": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/AudienceNetwork": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/CASExchange": [
+          "4.6.2"
+        ]
+      }
+    },
+    {
+      "name": "Families",
+      "dependencies": {
+        "CleverAdsSolutions-SDK/IronSource": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/UnityAds": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/GoogleAds": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/LiftoffMonetize": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/InMobi": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/Chartboost": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/Kidoz": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/Mintegral": [
+          "4.6.2"
+        ],
+        "CleverAdsSolutions-SDK/YangoAds": [
+          "4.6.2"
+        ]
+      }
+    }
+  ],
+  "swift_version": "5.0"
+}

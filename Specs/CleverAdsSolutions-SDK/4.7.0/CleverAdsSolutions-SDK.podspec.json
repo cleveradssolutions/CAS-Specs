@@ -23,7 +23,7 @@
       "name": "IronSource",
       "dependencies": {
         "CASMediationIronSource": [
-          "9.4.1.1"
+          "9.4.1.2"
         ],
         "CleverAdsSolutions-Base": [
           "4.7.0"

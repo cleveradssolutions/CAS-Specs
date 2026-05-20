@@ -210,7 +210,7 @@
       "name": "CrossPromo",
       "dependencies": {
         "CASMediationCrossPromo": [
-          "4.1.0.0"
+          "4.1.0.1"
         ],
         "CleverAdsSolutions-Base": [
           "4.7.0"

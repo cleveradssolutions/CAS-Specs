@@ -14,7 +14,7 @@
     "http": "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.8.2-beta1/CASMediationAudienceNetwork-6.22.0.1.zip"
   },
   "platforms": {
-    "ios": "15.0"
+    "ios": "13.0"
   },
   "swift_versions": "5.0",
   "static_framework": true,

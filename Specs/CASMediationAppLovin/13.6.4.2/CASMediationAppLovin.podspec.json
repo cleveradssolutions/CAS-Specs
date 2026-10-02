@@ -1,6 +1,6 @@
 {
   "name": "CASMediationAppLovin",
-  "version": "13.6.4.1",
+  "version": "13.6.4.2",
   "summary": "The AppLovin mediation adapter is a library that handles communication between the CAS.AI SDK and the AppLovin SDK. It enables you to load ads from AppLovin using the mediation feature in the CAS.AI SDK.",
   "homepage": "https://github.com/cleveradssolutions/CAS-iOS",
   "license": {

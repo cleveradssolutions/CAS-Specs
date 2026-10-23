@@ -1,6 +1,6 @@
 {
-  "name": "MonetrixAdsVpn",
-  "version": "1.3.0.0",
+  "name": "MonetrixAds",
+  "version": "1.3.0.1",
   "summary": "Monetrix iOS Advertising SDK",
   "homepage": "https://monetrix.ai/",
   "authors": "Monetrix Inc.",
@@ -9,12 +9,10 @@
     "text": "Copyright (c) 2025 Monetrix Inc. All rights reserved."
   },
   "source": {
-    "http": "https://monetrix.ai/sdk/dl/1.3.0.0/MonetrixAdsVpn.zip"
+    "http": "https://monetrix.ai/sdk/dl/1.3.0.1/MonetrixAdsSpm.zip"
   },
   "platforms": {
     "ios": "15.0"
   },
-  "static_framework": true,
-  "vendored_frameworks": "resource/*.xcframework",
-  "resources": "resource/MonetrixAdsRes.bundle"
+  "vendored_frameworks": "MonetrixAds.xcframework"
 }

@@ -11,7 +11,7 @@
     "CleverAdsSolutions LTD": "support@cas.ai"
   },
   "source": {
-    "http": "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.9.0-beta2/CleverAdsSolutions-4.9.0-beta2.zip"
+    "http": "https://github.com/cleveradssolutions/CAS-iOS/releases/download/4.9.0-beta.2/CleverAdsSolutions-4.9.0-beta2.zip"
   },
   "platforms": {
     "ios": "15.0"

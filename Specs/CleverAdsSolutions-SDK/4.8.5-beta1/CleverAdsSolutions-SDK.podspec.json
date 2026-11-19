@@ -424,7 +424,7 @@
         "CleverAdsSolutions-SDK/CASExchange": [
           "4.8.5-beta1"
         ],
-        "CleverAdsSolutions-SDK/Maticoo": [
+        "CleverAdsSolutions-SDK/Moloco": [
           "4.8.5-beta1"
         ]
       }
@@ -493,6 +493,12 @@
         ],
         "CleverAdsSolutions-SDK/Monetrix": [
           "4.8.5-beta1"
+        ],
+        "CleverAdsSolutions-SDK/Bidease": [
+          "4.8.5-beta1"
+        ],
+        "CleverAdsSolutions-SDK/BlueSea": [
+          "4.8.5-beta1"
         ]
       }
     },
@@ -542,9 +548,6 @@
           "4.8.5-beta1"
         ],
         "CleverAdsSolutions-SDK/Ogury": [
-          "4.8.5-beta1"
-        ],
-        "CleverAdsSolutions-SDK/Maticoo": [
           "4.8.5-beta1"
         ],
         "CleverAdsSolutions-SDK/Monetrix": [
